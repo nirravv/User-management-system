@@ -10,7 +10,7 @@ const connectDB = require('./server/database/connection');
 const app = express();
 
 // enable ssl redirect
-app.use(sslRedirect());
+app.use(sslRedirect(['production'], 301));
 
 dotenv.config({path:'config.env'})
 const PORT = process.env.PORT || 8080;
