@@ -10,7 +10,7 @@ $("#update_user").submit(function(event){
         data[n['name']] = n['value'];
     })
     var request = {
-        "url":`https://ums-express.vercel.app/api/users/${data.id}`,
+        "url":`https://ums-express.herokuapp.com/api/users/${data.id}`,
         "method":"PUT",
         "data":data
     }
@@ -25,7 +25,7 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id");
 
         var request = {
-            "url":`https://ums-express.vercel.app/api/users/${id}`,
+            "url":`https://ums-express.herokuapp.com/api/users/${id}`,
             "method":"DELETE",
         }
 
