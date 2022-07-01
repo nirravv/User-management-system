@@ -1,3 +1,4 @@
+import sslRedirect from 'heroku-ssl-redirect';
 const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
@@ -7,6 +8,9 @@ const path = require('path');
 const connectDB = require('./server/database/connection');
 
 const app = express();
+
+// enable ssl redirect
+app.use(sslRedirect());
 
 dotenv.config({path:'config.env'})
 const PORT = process.env.PORT || 8080;
