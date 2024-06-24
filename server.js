@@ -8,15 +8,6 @@ const connectDB = require('./server/database/connection');
 
 const app = express();
 
-// Redirect to Https
-app.use((req, res, next) => {
-    if (req.header('x-forwarded-proto') !== 'https') {
-      res.redirect(`https://${req.header('host')}${req.url}`)
-    } else {
-      next();
-    }
-});
-
 dotenv.config({path:'config.env'})
 const PORT = process.env.PORT || 8080;
 
