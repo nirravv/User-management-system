@@ -3,6 +3,26 @@ User Management System
 
 This project is a simple User Management System built with Node.js, Express, MongoDB, and client-side JavaScript (jQuery). It allows users to perform CRUD operations (Create, Read, Update, Delete) on user records.
 
+
+Screenshots
+------------------
+
+### Home Page
+![Home Page](Project_Images/home_page.png)
+
+### Add User Page
+![Add User Page](Project_Images/add_user.png)
+
+### User Added
+![User Added](Project_Images/user_added.png)
+
+### Update User Page
+![Update User Page](Project_Images/update_user.png)
+
+### Delete user
+![Delete User](Project_Images/delete_user.png)
+
+
 Functionalities
 ---------------
 
@@ -32,7 +52,7 @@ To get a local copy up and running follow these simple steps:
 
     Copy code
 
-    ```git clone https://github.com/yourusername/user-management-system.git```
+    ```git clone https://github.com/nirravv/User-management-system.git```
 
 2.  Install NPM packages:
 
